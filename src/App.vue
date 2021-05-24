@@ -41,6 +41,7 @@ export default {
   body
     margin: 0
     font-family: $font-1
+    background: black
   #app
     position: relative
   input[type=number]::-webkit-inner-spin-button, 
