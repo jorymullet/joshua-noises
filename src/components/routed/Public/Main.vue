@@ -166,6 +166,8 @@ export default {
       .content 
         display: grid
         grid-template-columns: 1fr 1fr
+        @media (max-width: 1000px)
+          grid-template-columns: 1fr
         .area
           background: white
           &.people-area
@@ -185,6 +187,9 @@ export default {
             //justify-items: center
             column-gap: 1rem
             row-gap: 1rem
+            @media (max-width: 1000px)
+              display: flex
+              flex-wrap: wrap
             .noise
               padding: 3rem
               background: black
@@ -196,5 +201,4 @@ export default {
               transition: all .1s
               &:hover
                 transform: rotate(2deg) scale(1.1)
-                //color: lightgrey
 </style>
