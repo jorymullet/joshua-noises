@@ -1,0 +1,24 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function isAdmin () {
+      return get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'ADMIN'
+    }
+
+    match /users/{userId} {
+      allow read: if true;
+    }
+
+    match /applications/{applicationId} {
+      allow read: if true;
+      allow update: if isAdmin()
+      allow delete: if isAdmin()
+    }
+    match /system {
+      match /prices {
+        allow read: if true;
+      }
+    }
+  }
+}
