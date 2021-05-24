@@ -105,5 +105,7 @@ export default {
               height: fit-content
               transition: all .1s
               &:hover
-                transform: rotate(4deg) scale(1.1)
+                transform: rotate(2deg) scale(1.1)
+                color: lightgrey
+                background: #333
 </style>
