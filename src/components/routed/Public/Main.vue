@@ -61,7 +61,7 @@ export default {
       .header Joshua Noises
       .content
         .generic-area.area
-          .title Generic Noises
+          .title Generic
           .noises-holder
             .noise(
               v-for='noise in buttons.generic'
