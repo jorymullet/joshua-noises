@@ -8,7 +8,15 @@ import 'firebase/firestore'
 import 'firebase/storage'
 import './registerServiceWorker'
 
-export const firebase = uninitializedFirebase.initializeApp(JSON.parse(process.env.VUE_APP_FIREBASE_CONFIG))
+export const firebase = uninitializedFirebase.initializeApp({
+  apiKey: "AIzaSyCaXkfbCoUZE0Ky9Pi8TdNeCeI34_IMvNA",
+  authDomain: "joshua-noises.firebaseapp.com",
+  projectId: "joshua-noises",
+  storageBucket: "joshua-noises.appspot.com",
+  messagingSenderId: "199903655056",
+  appId: "1:199903655056:web:1085590d1032acfe355415",
+  measurementId: "G-ZX3KKFQSVX"
+})
 export const auth = firebase.auth()
 
 Vue.use({

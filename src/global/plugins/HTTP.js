@@ -1,5 +1,13 @@
 const isLocal = window.location.hostname === 'localhost'
-const CONFIG = JSON.parse(process.env.VUE_APP_FIREBASE_CONFIG)
+const CONFIG = {
+  apiKey: "AIzaSyCaXkfbCoUZE0Ky9Pi8TdNeCeI34_IMvNA",
+  authDomain: "joshua-noises.firebaseapp.com",
+  projectId: "joshua-noises",
+  storageBucket: "joshua-noises.appspot.com",
+  messagingSenderId: "199903655056",
+  appId: "1:199903655056:web:1085590d1032acfe355415",
+  measurementId: "G-ZX3KKFQSVX"
+}
 const PROJECT_ID = CONFIG.projectId
 const BASE_URL = isLocal ? `http://localhost:5000/${PROJECT_ID}/us-central1/` : `https://us-central1-${PROJECT_ID}.cloudfunctions.net/`
 import { auth } from '@/main'
