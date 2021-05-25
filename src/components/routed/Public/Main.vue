@@ -88,8 +88,8 @@ export default {
             url: 'https://firebasestorage.googleapis.com/v0/b/joshua-noises.appspot.com/o/noises%2Fjules-deployed.mp3?alt=media&token=18822843-9aee-48dc-b034-5fd27f2930e0',
           },
           {
-            name: 'Jules: Stoppin\'',
-            url: 'https://firebasestorage.googleapis.com/v0/b/joshua-noises.appspot.com/o/noises%2Fjules-stop.mp3?alt=media&token=edc0d089-6178-4417-822a-97ea7a129638',
+            name: 'Jules: Holy',
+            url: 'https://firebasestorage.googleapis.com/v0/b/joshua-noises.appspot.com/o/noises%2Fjules-beautiful.mp3?alt=media&token=63107f09-37d7-4d4b-872a-4f6891c1c16b',
           },
           {
             name: 'Kenny: Jaminfranklin',
@@ -112,8 +112,8 @@ export default {
             url: 'https://firebasestorage.googleapis.com/v0/b/joshua-noises.appspot.com/o/noises%2Fpaul-ballin.mp3?alt=media&token=0e52e13b-4d9d-454a-9cb1-bb58be9fcdc0',
           },
           {
-            name: 'Paul: Oh Heck Yeah',
-            url: 'https://firebasestorage.googleapis.com/v0/b/joshua-noises.appspot.com/o/noises%2Fpaul-heck-yeah.mp3?alt=media&token=d838325e-9991-4a0f-ac19-fcbac1f65a8c',
+            name: 'Paul: Mick-dow-well',
+            url: 'https://firebasestorage.googleapis.com/v0/b/joshua-noises.appspot.com/o/noises%2Fpaul-mickdowwell.mp3?alt=media&token=15d2bfdb-40fa-416c-ba31-dda6f231e015',
           },
         ]
       },
@@ -192,6 +192,7 @@ export default {
               flex-wrap: wrap
             .noise
               padding: 3rem
+              user-select: none
               background: black
               border-radius: 1rem
               color: white
